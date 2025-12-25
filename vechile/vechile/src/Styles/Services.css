@@ -1,0 +1,282 @@
+/* Services Page Styles */
+.services-page {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Services Hero Section */
+.services-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+              url('https://media.istockphoto.com/id/1867271295/video/laptop-on-toolbox-cart-behind-car-engine-in-auto-repair-shop.jpg?s=640x640&k=20&c=z4LuxRzO83NPsbvkzfBWxkvK0h_ongjTtzKKubJJpB8=');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 3px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+/* Services Cards Section */
+.services-cards-section {
+  padding: 5rem 0;
+  background: white;
+}
+
+.services-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card-large {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card-large:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-card-large img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: #0d2c4f;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card-content p {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.book-btn {
+  background: linear-gradient(135deg, #1f6fd6, #0d2c4f);
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.book-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(31, 111, 214, 0.3);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 5rem 0;
+  background: #f8fafc;
+}
+
+.why-choose-us h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0d2c4f;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.feature {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature h4 {
+  font-size: 1.2rem;
+  color: #0d2c4f;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.feature p {
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Special Offers Section */
+.special-offers {
+  padding: 5rem 0;
+  background: white;
+}
+
+.special-offers h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0d2c4f;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.offer-card {
+  background: linear-gradient(135deg, #1f6fd6, #0d2c4f);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+}
+
+.offer-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.offer-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.offer-card p {
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: 5rem 0;
+  background: #f8fafc;
+}
+
+.cta-card {
+  display: flex;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  align-items: center;
+}
+
+.cta-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cta-content {
+  padding: 3rem;
+  flex: 1;
+  text-align: center;
+}
+
+.cta-content h3 {
+  font-size: 2rem;
+  color: #0d2c4f;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cta-content p {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.cta-btn {
+  background: linear-gradient(135deg, #1f6fd6, #0d2c4f);
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(31, 111, 214, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .service-card-large,
+  .cta-card {
+    flex-direction: column;
+  }
+  
+  .service-card-large img,
+  .cta-card img {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .features-grid,
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,8 +1,4 @@
 {
-<<<<<<< HEAD
-  "dependencies": {
-    "react-router-dom": "^7.11.0"
-=======
   "name": "vechile",
   "version": "0.1.0",
   "private": true,
@@ -40,6 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
->>>>>>> e694c19 (Update frontend code)
   }
 }
