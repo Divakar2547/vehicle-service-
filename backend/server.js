@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const { User, Vehicle, ServicePackage, Booking, Payment, AdminLog } = require('./models');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 // Middleware
 app.use(cors());
@@ -209,6 +209,27 @@ app.get('/api/health', (req, res) => {
     message: 'Vehicle Service API connected to MongoDB Atlas',
     database: mongoose.connection.readyState === 1 ? 'Connected' : 'Disconnected'
   });
+});
+
+// Database check route
+app.get('/api/db-check', async (req, res) => {
+  try {
+    const users = await User.countDocuments();
+    const vehicles = await Vehicle.countDocuments();
+    const bookings = await Booking.countDocuments();
+    const payments = await Payment.countDocuments();
+    const packages = await ServicePackage.countDocuments();
+    
+    const sampleUsers = await User.find().limit(3).select('name email');
+    const sampleVehicles = await Vehicle.find().limit(3).select('brand model numberPlate');
+    
+    res.json({
+      collections: { users, vehicles, bookings, payments, packages },
+      sampleData: { users: sampleUsers, vehicles: sampleVehicles }
+    });
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 // Start server
